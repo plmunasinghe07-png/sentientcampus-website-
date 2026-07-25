@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Sentient Campus — education, professional training and supportive learning experiences." />
+  <title>Sentient Campus</title>
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Sentient Campus home">
+        <img src="logo.png" alt="Sentient Campus logo" />
+      </a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#programmes">Programmes</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">LEARN • GROW • TRANSFORM</p>
+          <h1>Education that develops people, practice and purpose.</h1>
+          <p class="hero-copy">Sentient Campus brings together professional learning, psychosocial education and practical training in a calm, human-centred learning environment.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#courses">Explore Courses</a>
+            <a class="btn btn-secondary" href="#contact">Contact Us</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="logo.png" alt="Sentient Campus" />
+          <div class="hero-card-copy">
+            <strong>Sentient Campus</strong>
+            <span>Investing in Education for People.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow">ABOUT US</p>
+          <h2>A learning space built around people.</h2>
+        </div>
+        <div>
+          <p>Our programmes are designed to connect knowledge with real-world practice. We focus on participatory learning, reflection, creativity and skills that can be used in communities, workplaces and helping professions.</p>
+          <p>Course details, faculty profiles, partnerships and accreditation information can be expanded here as the Campus grows.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="courses">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">UPCOMING COURSES</p>
+            <h2>What’s coming next</h2>
+          </div>
+          <p class="section-note">Dates, venues, fees and registration links can be updated here at any time.</p>
+        </div>
+        <div class="cards three">
+          <article class="card">
+            <span class="tag">Coming soon</span>
+            <h3>Creative & Expressive Therapies</h3>
+            <p>Practice-based learning using art, play, movement, drama and narrative approaches.</p>
+            <a href="#contact">Request details →</a>
+          </article>
+          <article class="card">
+            <span class="tag">Coming soon</span>
+            <h3>Counselling & Psychosocial Skills</h3>
+            <p>Applied learning for counselling, psychosocial support and community-based helping roles.</p>
+            <a href="#contact">Request details →</a>
+          </article>
+          <article class="card">
+            <span class="tag">Coming soon</span>
+            <h3>Professional Training Programmes</h3>
+            <p>Short courses and customised training for organisations, practitioners and field teams.</p>
+            <a href="#contact">Request details →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="programmes">
+      <div class="container">
+        <p class="eyebrow">WHAT WE DO</p>
+        <h2>Learning beyond the classroom</h2>
+        <div class="feature-grid">
+          <div class="feature"><span>01</span><h3>Training</h3><p>Interactive learning designed around practical outcomes and participant experience.</p></div>
+          <div class="feature"><span>02</span><h3>Workshops</h3><p>Focused sessions for organisations, schools, community groups and professional teams.</p></div>
+          <div class="feature"><span>03</span><h3>Psychosocial Education</h3><p>Accessible learning that supports wellbeing, awareness and responsible helping practice.</p></div>
+          <div class="feature"><span>04</span><h3>Custom Programmes</h3><p>Tailored programmes developed around the needs of a specific group or institution.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="gallery">
+      <div class="container">
+        <div class="section-head light">
+          <div><p class="eyebrow">PROGRAMME GALLERY</p><h2>Moments from our work</h2></div>
+          <p class="section-note">Replace these placeholders with photos from completed programmes whenever you are ready.</p>
+        </div>
+        <div class="gallery">
+          <div class="photo-placeholder"><span>Programme Photo 01</span></div>
+          <div class="photo-placeholder"><span>Programme Photo 02</span></div>
+          <div class="photo-placeholder"><span>Programme Photo 03</span></div>
+          <div class="photo-placeholder"><span>Programme Photo 04</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-box">
+        <div>
+          <p class="eyebrow">CONTACT</p>
+          <h2>Let’s learn, grow and build together.</h2>
+          <p>Use this section for your official phone, WhatsApp, email, branch addresses and social media links. These can be added or changed later without rebuilding the whole site.</p>
+        </div>
+        <a class="btn btn-primary" href="#home">Back to top</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <img src="logo.png" alt="Sentient Campus" />
+      <div><strong>Sentient Campus</strong><p>Investing in Education for People.</p></div>
+      <p class="copyright">© <span id="year"></span> Sentient Campus. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+    document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
